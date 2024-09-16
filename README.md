@@ -69,7 +69,7 @@
 
 
 
-                                                    COMPONENTS
+                                            COMPONENTS
 - form login con contraseña o google
 - form signUp con contraseña o google
 - sidebar

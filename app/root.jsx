@@ -7,6 +7,12 @@ import {
 } from "@remix-run/react";
 import "./tailwind.css";
 
+export const meta = () => {
+  return [
+    { title: "RentApp" }
+  ];
+};
+
 export function Layout({ children }) {
   return (
     <html lang="en">
