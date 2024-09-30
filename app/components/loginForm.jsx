@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/COMPONENTS/ui/card";
 import { Input } from "./ui/input";
-import { Button } from "./ui/button";
+// import { Button } from "./ui/button";
 // import { BeatLoader } from "react-spinners";
 import { Eye, EyeOff } from "lucide-react";
 // import { FaGithub } from "react-icons/fa";
@@ -18,10 +18,8 @@ export default function LoginForm() {
         <form>
           <Card>
             <CardHeader>
-              <CardTitle>Login</CardTitle>
+              <CardTitle className="text-center">Login</CardTitle>
               <CardDescription>
-                <span>to your account if you already have one.</span>
-                <br />
                 {/* {error && <Error errorMessage={error.message} />} */}
               </CardDescription>
             </CardHeader>
