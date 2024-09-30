@@ -28,6 +28,27 @@ export default function SignupForm() {
               <div>
                 <Input
                 //   onChange={handleInputChange}
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  autoComplete="email"
+                />
+                {/* {errors.email && <Error errorMessage={errors.email} />} */}
+              </div>
+              <div>
+                <Input
+                //   onChange={handleInputChange}
+                  type="text"
+                  name="lastname"
+                  placeholder="Lastname"
+                  autoComplete="email"
+                />
+                {/* {errors.email && <Error errorMessage={errors.email} />} */}
+              </div>
+
+              <div>
+                <Input
+                //   onChange={handleInputChange}
                   type="email"
                   name="email"
                   placeholder="Email"
@@ -42,6 +63,28 @@ export default function SignupForm() {
                   type={passEye ? "password" : "text"}
                   name="password"
                   placeholder="Password"
+                  autoComplete="current-password"
+                />
+                {passEye ? (
+                  <Eye
+                    className="absolute inset-y-0 my-auto right-3 text-gray-400 cursor-pointer"
+                    onClick={() => setPassEye(!passEye)}
+                  />
+                ) : (
+                  <EyeOff
+                    className="absolute inset-y-0 my-auto right-3 text-gray-400 cursor-pointer"
+                    onClick={() => setPassEye(!passEye)}
+                  />
+                )}
+  
+                {/* {errors.password && <Error errorMessage={errors.password} />} */}
+              </div>
+              <div className="relative">
+                <Input
+                //   onChange={handleInputChange}
+                  type={passEye ? "password" : "text"}
+                  name="password"
+                  placeholder="Confirm password"
                   autoComplete="current-password"
                 />
                 {passEye ? (
