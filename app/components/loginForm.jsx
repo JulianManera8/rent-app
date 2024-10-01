@@ -1,7 +1,10 @@
+/* eslint-disable no-unused-vars */
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/COMPONENTS/ui/card";
 import { Input } from "./ui/input";
-// import { Button } from "./ui/button";
-// import { BeatLoader } from "react-spinners";
+import { Button } from "./ui/button";
+// import { BeatLoader } from "react-spinner";
+import pkg from 'react-spinner';
+const {BeatLoader} = pkg;
 import { Eye, EyeOff } from "lucide-react";
 // import { FaGithub } from "react-icons/fa";
 // import { FcGoogle } from "react-icons/fc";
@@ -12,7 +15,12 @@ import { useState } from "react";
 export default function LoginForm() {
 
     const [passEye, setPassEye] = useState(true)
+    const [loading, setLoading] = useState(false)
+    
+    const handleLogin = (e) => {
+      e.preventDefault()
 
+    }
 
     return (
         <form>
@@ -61,11 +69,11 @@ export default function LoginForm() {
             </CardContent>
   
             <CardFooter className="flex justify-center gap-5 flex-col">
-              {/* <Button onClick={handleLogin}>
+              <Button onClick={handleLogin}>
                 {loading ? <BeatLoader size={10} color="teal" /> : "Login"}
-              </Button> */}
+              </Button>
   
-              <span className="mt-3"> Or if you prefer, you can also login with:</span>
+              {/* <span className="mt-3"> Or if you prefer, you can also login with:</span> */}
   
               <div className="space-x-7">
   
@@ -76,6 +84,7 @@ export default function LoginForm() {
                 {/* <Button onClick={handleLoginGithub}>
                   <FaGithub className="mr-2 h-4 w-4" /> Github
                 </Button> */}
+
               </div>
             </CardFooter>
           </Card>
