@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/COMPONENTS/ui/card";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 // import { BeatLoader } from "react-spinner";

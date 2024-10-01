@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/COMPONENTS/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 import LoginForm from "@/components/loginForm";
 import SignupForm from "@/components/signupForm";
 

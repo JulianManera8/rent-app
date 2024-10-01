@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/COMPONENTS/ui/card";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Button } from "../components/ui/button";
 // import { BeatLoader } from "react-spinner";
 import pkg from 'react-spinner';
 const {BeatLoader} = pkg;
